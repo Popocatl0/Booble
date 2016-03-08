@@ -87,7 +87,6 @@ public class BoobleScript : MonoBehaviour {
 
 	private void boobleGameOver() {
 		Collider[] hitColliders = Physics.OverlapSphere(boobleObject.transform.position, boobleObject.transform.localScale.x - 10.0f);
-		List<GameObject> boobleCol = new List<GameObject> ();
 		foreach (Collider colliderObject in hitColliders) {
 			GameObject colAux = colliderObject.gameObject;
 			if(colAux.name == "LimitCollision"){
