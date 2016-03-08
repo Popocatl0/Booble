@@ -33,6 +33,9 @@ public class init : MonoBehaviour {
 		if (BoobleScript.gameOver) {
 			lose.enabled = true;
 		}
+		if (Input.GetKeyUp (KeyCode.Escape)) {
+			Application.Quit();
+		}
 	}
 
 	private void playBooble(){
